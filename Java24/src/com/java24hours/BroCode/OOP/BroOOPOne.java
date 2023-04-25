@@ -7,8 +7,8 @@ public class BroOOPOne {
     // example: (phone, desk, computer, coffee cup)
 
     Car myCar = new Car();
-    // System.out.println(myCar.model);
-    // System.out.println(myCar.make);
+    System.out.println(myCar.model);
+    System.out.println(myCar.make);
 
     myCar.drive();
 
