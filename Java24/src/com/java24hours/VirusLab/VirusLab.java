@@ -1,4 +1,4 @@
-package com.java24hours.VirusLab;
+package com.java24hours;
 
 public class VirusLab {
   public static void main(String[] arguments) {
