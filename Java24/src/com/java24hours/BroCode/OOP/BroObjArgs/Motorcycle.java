@@ -1,11 +1,10 @@
 package com.java24hours.BroCode.OOP.BroObjArgs;
 
-public class Car {
+public class Motorcycle {
 
   String name;
 
-  Car(String name) {
+  Motorcycle(String name) {
     this.name = name;
   }
-
 }

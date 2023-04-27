@@ -8,7 +8,10 @@ public class BroPassObjsAsArgs {
     Car car1 = new Car("BMW");
     Car car2 = new Car("Bentley");
 
+    Motorcycle motorcycle1 = new Motorcycle("Harley");
+
     garage.park(car1);
     garage.park(car2);
+    garage.park(motorcycle1);
   }
 }
