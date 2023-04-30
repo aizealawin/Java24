@@ -11,10 +11,10 @@ public class Main {
         try {
 
             System.out.println("Enter a whole number to divide: ");
-            int x = scanner.nextInt();
+            double x = scanner.nextInt();
 
             System.out.println("Enter a whole number to divide by: ");
-            int y = scanner.nextInt();
+            double y = scanner.nextInt();
 
             double z = x / y;
 
