@@ -6,7 +6,7 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
         // JFrame = a GUI window to add components to
-
+/*
         JFrame frame = new JFrame(); //creates a frame for us
         frame.setTitle("Title");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // closes out of application, default is hide
@@ -17,9 +17,9 @@ public class Main {
         ImageIcon image = new ImageIcon("OOP/BroGUI/ArrosaStar.png"); // creates an image icon
         frame.setIconImage(image.getImage()); // change icon of frame
         frame.getContentPane().setBackground(new Color(123,50,250)); //change color of bg
+*/
 
-
-
+    new MyFrame();
 
 
     }
