@@ -2,7 +2,7 @@ package com.java24hours.BroCode.DataStructuresAndAlgorithms;
 import  java.util.Queue;
 import  java.util.LinkedList;
 
-public class Queues {
+public class BroQueues {
     public static void main(String[] args) {
 
 //        Queue = FIFO data structure (first in first out) ex: line of people
