@@ -6,12 +6,15 @@ public class BroBinarySearch {
 //                    Half of the array is eliminated during each step.
 
     public static void main(String[] args) {
-        int array[] = new int[10000000];
-        int target = 777777;
+//        int array[] = new int[10000000];
 
-        for (int i = 0; i < array.length; i++){
-            array[i] = i;
-        }
+        int[] array = {1, 4, 6, 21, 24, 58, 65, 69, 70};
+
+        int target = 58;
+
+//        for (int i = 0; i < array.length; i++){
+//            array[i] = i;
+//        }
 
 //        int index = Arrays.binarySearch(array, target);
 //        built in binary search function from Java.util
@@ -49,10 +52,10 @@ public class BroBinarySearch {
         if (leftI > rightI) return -1;
 
         int middle = (leftI + rightI) / 2;
-        System.out.println("middle :" + middle);
+        System.out.println("Left Index: " + leftI + "\nRight Index: " + rightI + "\nMiddle Index:" + middle + "\n");
 
-        if(target == middle) return middle;
-        else if (target > middle) return search(array, target, middle + 1, rightI);
+        if(target == array[middle]) return middle;
+        else if (target > array[middle]) return search(array, target, middle + 1, rightI);
         else return search(array, target, leftI, middle -1);
     }
 }
