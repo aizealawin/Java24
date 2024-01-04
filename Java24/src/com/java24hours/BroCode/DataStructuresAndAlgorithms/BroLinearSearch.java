@@ -1,4 +1,4 @@
-package com.java24hours.BroCode.DataStructuresAndAlgorithms.BroDynamicArray;
+package com.java24hours.BroCode.DataStructuresAndAlgorithms;
 
 public class BroLinearSearch {
     public static void main(String[] args) {
