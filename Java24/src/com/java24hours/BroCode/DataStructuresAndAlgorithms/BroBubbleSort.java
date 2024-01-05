@@ -12,8 +12,8 @@ public class BroBubbleSort {
 
         int array[]= {9, 1, 8, 2, 7, 3, 6, 4, 5};
 
-        bubbleSort(array);
-
+//        bubbleSort(array);
+        recursiveBubbleSort(array, array.length);
 //        Very simple to write but still very inefficient
 
         for(int i : array) {
@@ -32,6 +32,21 @@ public class BroBubbleSort {
                 }
             }
         }
+    }
+
+    private static void recursiveBubbleSort(int array[], int n){
+        if (n <= 1) return;
+
+        for(int i = 0; i  < n -1; i++){
+            for(int j = 0; j < n - 1 - i; j++){
+                if(array[j] > array[j+1]){
+                    int temp  = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
+                }
+            }
+        }
+        recursiveBubbleSort(array, n-1);
 
     }
 }
