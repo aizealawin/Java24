@@ -15,7 +15,9 @@ public class BroInsertionSort {
 
         int array[]= {9, 1, 8, 2, 7, 3, 6, 4, 5};
 
-        insertionSort(array);
+//        insertionSort(array);
+        recursiveInsertionSort(array, array.length);
+
 
         for (int i : array){
             System.out.print(i);
@@ -34,6 +36,22 @@ public class BroInsertionSort {
             }
             array[j+1] = temp;
         }
+
+    }
+
+    public static void recursiveInsertionSort(int[] array, int n) {
+        if (n <= 1) return;
+
+        recursiveInsertionSort(array, n-1);
+
+        int temp = array[n-1];
+        int j = n-2;
+
+        while(j >= 0 && array[j] > temp){
+            array[j+1] = array[j];
+            j--;
+        }
+        array[j+1] = temp;
 
     }
 }
